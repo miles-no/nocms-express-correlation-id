@@ -5,7 +5,7 @@
 const correlator = require('correlation-id');
 
 module.exports = (header = 'X-Correlation-ID') => {
-  return (req, res, next) {
+  return (req, res, next) => {
     req.correlationId = correlator.getId;
 
     const id = req.get(header);
