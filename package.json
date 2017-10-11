@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/miles-no/nocms-express-correlation-id#readme",
   "devDependencies": {
-    "condition-circle": "^1.5.0"
+    "condition-circle": "^1.5.0",
+    "semantic-release": "^6.3.6"
   },
   "dependencies": {
     "correlation-id": "^2.0.0",
-    "semantic-release": "^6.3.6",
     "uuid.v4": "^1.0.0"
   }
 }
