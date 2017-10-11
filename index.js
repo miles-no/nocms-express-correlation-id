@@ -10,9 +10,9 @@ module.exports = (header = 'X-Correlation-ID') => {
 
     const id = req.get(header);
     if (id) {
-      correlator.withId(id, next || () => {});
+      correlator.withId(id, next || {});
     } else {
-      correlator.withId(next || () => {});
+      correlator.withId(next || {});
     }
   }
 }
